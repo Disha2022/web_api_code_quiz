@@ -20,3 +20,21 @@ const quiz = [
         correctAnswer: 3
     },
 ]
+
+let questionNumber = 0;
+let seconds = 75;
+
+const timer = document.getElementById('timer');
+let timerInterval;
+let temporaryMessageTimeout;
+
+const quizHeader = document.getElementById('quiz-header');
+const questions = document.getElementById('questions');
+function setQuestion(num) {
+    quizHeader.textContent = quiz[num].question;
+    const answers = quiz[num].answers;
+    document.getElementById('answer1').innerHTML = "1. " + answers[0]
+    document.getElementById('answer2').innerHTML = "2. " + answers[1]
+    document.getElementById('answer3').innerHTML = "3. " + answers[2]
+    document.getElementById('answer4').innerHTML = "4. " + answers[3]
+}
