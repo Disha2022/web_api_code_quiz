@@ -1,22 +1,22 @@
 const quiz = [
     {
-        question: "Out of 180 countries, what is Ukraine's corruption ranking in 2021? (lower is better)",
-        answers: ["27th", "122nd", "124th", "136th"],
-        correctAnswer: 2
-    },
-    {
-        question: "Out of 180 countries, what is Russia's corruption ranking in 2021? (lower is better)",
-        answers: ["27th", "122nd", "124th", "136th"],
+        question: "What does HTML stand for?",
+        answers: ["Home Tool Markup Language", "Hyper Tool Markup Language", "Hyperlinks and Type Markup Language", "Hyper Text Markup language"],
         correctAnswer: 4
     },
     {
-        question: "Out of 180 countries, what is United State's corruption ranking in 2021? (lower is better)",
-        answers: ["1st", "27th", "124th", "180th"],
+        question: " ________  is a block of code which only runs when it is called",
+        answers: ["Operator", "Object", "Method", "Script"],
         correctAnswer: 2
     },
     {
-        question: "Out of 180 countries, what is Mexico's corruption ranking in 2021? (lower is better)",
-        answers: ["27th", "122nd", "124th", "136th"],
+        question: "Random number can be created by ______",
+        answers: ["Math.random", "math.Random", "Math.floor", "math.Floor"],
+        correctAnswer: 2
+    },
+    {
+        question: "If a variable is defined outside of function, it is a ______ variable",
+        answers: ["Local", "Static", "Global", "Dynamic"],
         correctAnswer: 3
     },
 ]
