@@ -16,3 +16,61 @@ section button {
     text-align: center;
     align-content: center;
 }
+aside {
+    float: right;
+}
+
+nav {
+    float: left
+}
+
+main {
+    float: left;
+    padding: 10%;
+    padding-top: 2%;
+    align-items: center;
+}
+
+button {
+    background-color: purple;
+    cursor: pointer;
+    color: white;
+    padding: 2%;
+}
+
+button a {
+    color: white
+}
+
+button:hover {
+    background-color: rgb(170, 78, 170);
+}
+
+#questions button {
+    display: block;
+    padding: 1%;
+}
+
+.input-group {
+    display:flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+.input-group button {
+    padding: 0 3%;
+    margin-left: 5%
+}
+
+/* highscores */
+#highscores {
+    float: none;
+}
+ol{
+    display: inline;
+}
+li {
+    background-color: rgb(167, 117, 167);
+    list-style-position: inside;
+    padding-left: .2em;
+    margin-bottom: 5%;
+}
