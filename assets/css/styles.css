@@ -1,0 +1,18 @@
+main h1{
+    text-align: center;
+    color: black;
+    font-size: 24;
+    font-family: "Times New Roman", Times, serif;
+}
+section p{
+    text-align: center;
+    color: black;
+    font-size: 16;
+    font-family: "Times New Roman", Times, serif;  
+}
+section button {
+    color: white;
+    background-color: purple;
+    text-align: center;
+    align-content: center;
+}
