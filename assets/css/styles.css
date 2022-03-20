@@ -29,11 +29,12 @@ main {
 }
 
 #starting-section button {
+    display: grid;
+    margin: auto;
     background-color: purple;
     cursor: pointer;
     color: white;
-    padding: 5px 40px 10px 40px;
-    align-content: center;
+
 }
 
 button a {
