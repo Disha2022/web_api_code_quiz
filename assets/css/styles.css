@@ -42,11 +42,13 @@ main {
 }
 
 #questions button {
-    display: block;
+    display: grid;
+    align-content: center;
     padding: 1%;
     background-color: rgb(153, 69, 153);
     margin-top: 2%;
     color: white;
+
 }
 
 .input-group {

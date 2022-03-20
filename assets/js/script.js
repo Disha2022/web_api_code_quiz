@@ -27,12 +27,11 @@ const quiz = [
 let questionNumber = 0;
 let seconds = 75;
 
-//setup time with html id????????????????????
 
 const timer = document.getElementById('timer');
 let timerInterval;
 let temporaryMessageTimeout;
-//??????????????????????
+
 
 const quizHeader = document.getElementById('quiz-header');
 const questions = document.getElementById('questions');
@@ -63,7 +62,7 @@ function showTemporaryMessage(type){
         document.getElementById('correct').hidden = true;
         document.getElementById('wrong').hidden = false;
     }
-    document.getElementById('temp-results').hidden = false; //?
+    document.getElementById('temp-results').hidden = false; 
     temporaryMessageTimeout = setTimeout(function () {
         document.getElementById('temp-results').hidden = true;
     }, 2000)
@@ -76,7 +75,7 @@ function answer(userAnswer) {
     } else {
         // wrong answer
         seconds -= 20;
-        timer.innerHTML = seconds; ///
+        timer.innerHTML = seconds; 
         showTemporaryMessage("wrong")
     }
 
@@ -87,14 +86,14 @@ function answer(userAnswer) {
         quizHeader.innerHTML = "All done";
         questions.hidden = true;
         document.getElementById('quiz-results').hidden = false;
-        clearInterval(timerInterval);//??++
+        clearInterval(timerInterval);
         if (seconds < 0) {
             seconds = 0
         }
         document.getElementById('results').innerHTML = seconds;
     }
 }
-//?????????????????????????????????
+
 document.getElementById('answer1').onclick = function () { answer(1) };
 document.getElementById('answer2').onclick = function () { answer(2) };
 document.getElementById('answer3').onclick = function () { answer(3) };
@@ -115,5 +114,5 @@ document.getElementById('submit').onclick = function () {
         return b.seconds - a.seconds
     });
     localStorage.setItem("scores", JSON.stringify(scores))
-    window.location.href = "../highscore.html";
+    window.location.href = "./highscore.html";
 };

@@ -1,15 +1,48 @@
 # 04 Web APIs: Code Quiz
+## Author 
+Disha Barua 
 
-As you proceed in your career as a web developer, you will probably be asked to complete a coding assessment, which is typically a combination of multiple-choice questions and interactive challenges. For this challenge, you will build a timed code quiz that's made up of multiple-choice questions. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
+## Link
+Deployed code: 
+
+Github repository: 
 
 ## User Story
 
 ```
-AS A coding boot camp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
+AS A coding boot camp student I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
 SO THAT I can gauge my progress compared to my peers
 ```
+## Tools
+1. CSS
+2. HTML
+3. Javascript
 
+
+## index.html
+1. Created index.html and added relevant ids to use as placeholder.
+2. used hidden property to use one page.
+3. linked all the relavant style sheet and JavaScript.
+
+## highscore.html
+1. Created highscore.html to use as placeholder for highscores and created list of highscores.
+2. Added link for highscore.js in this file.
+## script.js
+1. Added const for array that contains questions, answer and correct answer property.
+2. Created variables to use in different funtions
+3. Added eventlistener to created inlinehtml element.
+4. Used conditional statements to turn hidden property on and off.
+5. manipulated timer with different funtions.
+6. Used setInterval method to manipulate timer.
+
+
+## highscore.js
+
+## Demo
+![Demonstration of the Coding Quiz Challenge.](./assets/images/Disha's Quiz.gif)
+
+
+-----------------------------------------------------------------------------------------------------------
 ## Acceptance Criteria
 
 ```
