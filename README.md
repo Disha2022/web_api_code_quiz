@@ -3,9 +3,9 @@
 Disha Barua 
 
 ## Link
-Deployed code: 
+Deployed code: https://disha2022.github.io/web_api_code_quiz/
 
-Github repository: 
+Github repository: https://github.com/Disha2022/web_api_code_quiz
 
 ## User Story
 
