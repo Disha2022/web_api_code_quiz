@@ -69,8 +69,23 @@ ol{
     display: inline;
 }
 li {
-    background-color: rgb(167, 117, 167);
+    background-color: rgb(153, 69, 153);
     list-style-position: inside;
     padding-left: .2em;
     margin-bottom: 5%;
+}
+
+#back-button {
+    background-color: rgb(153, 69, 153);
+   color: white;
+}
+
+#clear{
+    background-color: rgb(153, 69, 153);
+    color: white; 
+}
+
+#submit {
+    background-color: rgb(153, 69, 153);
+   color: white;
 }
