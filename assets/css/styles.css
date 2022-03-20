@@ -37,17 +37,16 @@ main {
 
 }
 
-button a {
-    color: white
-}
-
-button:hover {
-    background-color: rgb(170, 78, 170);
+#questions button:hover {
+    background-color: rgb(51, 125, 199);
 }
 
 #questions button {
     display: block;
     padding: 1%;
+    background-color: rgb(153, 69, 153);
+    margin-top: 2%;
+    color: white;
 }
 
 .input-group {

@@ -23,7 +23,7 @@ const quiz = [
     },
 ]
 
-//initialize timer
+//Placeholder and  timer
 let questionNumber = 0;
 let seconds = 75;
 
@@ -36,7 +36,7 @@ let temporaryMessageTimeout;
 
 const quizHeader = document.getElementById('quiz-header');
 const questions = document.getElementById('questions');
-//????????????????????
+//quiz question
 function setQuestion(num) {
     quizHeader.textContent = quiz[num].question;
     const answers = quiz[num].answers;
@@ -45,7 +45,7 @@ function setQuestion(num) {
     document.getElementById('answer3').innerHTML = "3. " + answers[2]
     document.getElementById('answer4').innerHTML = "4. " + answers[3]
 }
-//??????????????????????
+//adding hidden elsement to go from quiz start to questions
 document.getElementById('start-button').onclick = function () {
     questions.hidden = false;
     document.getElementById('starting-section').hidden = true;
@@ -54,7 +54,7 @@ document.getElementById('start-button').onclick = function () {
         timer.innerHTML = --seconds;
     }, 1000);
 }
-//??????????????????????????
+//Correct/Wrong?
 function showTemporaryMessage(type){
     if(type === "correct"){
         document.getElementById('correct').hidden = false;
@@ -63,12 +63,12 @@ function showTemporaryMessage(type){
         document.getElementById('correct').hidden = true;
         document.getElementById('wrong').hidden = false;
     }
-    document.getElementById('temp-results').hidden = false;
+    document.getElementById('temp-results').hidden = false; //?
     temporaryMessageTimeout = setTimeout(function () {
         document.getElementById('temp-results').hidden = true;
     }, 2000)
 }
-//???????????????????????????????????
+//function for checking answers and reassign time 
 function answer(userAnswer) {
     clearTimeout(temporaryMessageTimeout);
     if (userAnswer === quiz[questionNumber].correctAnswer) {
@@ -76,7 +76,7 @@ function answer(userAnswer) {
     } else {
         // wrong answer
         seconds -= 20;
-        timer.innerHTML = seconds;
+        timer.innerHTML = seconds; ///
         showTemporaryMessage("wrong")
     }
 
@@ -87,7 +87,7 @@ function answer(userAnswer) {
         quizHeader.innerHTML = "All done";
         questions.hidden = true;
         document.getElementById('quiz-results').hidden = false;
-        clearInterval(timerInterval);
+        clearInterval(timerInterval);//??++
         if (seconds < 0) {
             seconds = 0
         }
