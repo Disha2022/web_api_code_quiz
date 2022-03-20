@@ -39,7 +39,7 @@ SO THAT I can gauge my progress compared to my peers
 ## highscore.js
 
 ## Demo
-![Demonstration of the Coding Quiz Challenge.](./assets/images/Disha's Quiz.gif)
+![Demonstration of the Coding Quiz Challenge.](./assets/04-web-apis-homework-demo.gif)
 
 
 -----------------------------------------------------------------------------------------------------------
@@ -59,9 +59,6 @@ WHEN the game is over
 THEN I can save my initials and score
 ```
 
-The following animation demonstrates the application functionality:
-
-![Demonstration of the Coding Quiz Challenge.](./Assets/04-web-apis-homework-demo.gif)
 
 ### Review
 
